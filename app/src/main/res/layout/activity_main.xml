@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="10dp"
+        android:background="#732880"
+        android:padding="10dp"
+        android:text="Treinando Tabuada"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#E2C6E6"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtConta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtTitulo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginVertical="5dp"
+        android:background="#E8C2EF"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text=""
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+        android:textColor="#1C1A1A"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtConta"
+        android:layout_marginVertical="5dp"
+        android:background="#E8C2EF"
+        android:ems="10"
+        android:inputType="number"
+        android:selectAllOnFocus="true"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:imeOptions="actionSend"
+        />
+
+    <TextView
+        android:id="@+id/txtResultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editText"
+        android:layout_marginVertical="5dp"
+        android:background="#D684F8"
+        android:padding="10dp"
+        android:text=""
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        tools:ignore="UnknownId" />
+
+    <TextView
+        android:id="@+id/txtEstatisticas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtResultado"
+        android:layout_marginTop="15dp"
+        android:background="#D684F8"
+        android:padding="10dp"
+        android:text="Exercícios realizados: \nQuantidade de erros: \nAcertos: "
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#000000" />
+
+</RelativeLayout>
